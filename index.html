@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bag Nest </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.webp" alt="Bag Nest Logo" class="nav-logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bags.html">Bags</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="search-container">
+                    <input type="text" id="search" placeholder="Search Bags..." onkeyup="handleSearch(event)">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section with Slideshow -->
+    <section class="welcome-section">
+        <div class="slideshow-container">
+            <img src="s1.jpg" class="active" alt="Bag 1">
+            <img src="s2.jpg" alt="Bag 2">
+            <img src="s3.jpg" alt="Bag 3">
+        </div>
+        <div class="welcome-title">
+            <h1>Welcome to Bag Nest</h1>
+            <h4>Gear Up. Stand Out.</h4>
+        </div>
+    </section>
+    <h1 class="about"><center>About Us</center></h1>
+    <p class="aboutstones">Established in 2000, Bagnest has been dedicated to importing high-quality bags designed for both sports and school. With a focus on durability, style, and functionality, we ensure that every bag meets the needs of students and athletes alike. Our commitment to excellence has made us a trusted name in the industry, delivering bold and reliable designs for an active lifestyle.</p>
+
+
+
+
+ <!-- Product Catalog -->
+ <h1 class="best">New Arrivals</h1>
+ <section id="catalog">
+     <div class="product" data-name="Cool Student">
+         <img src="coolstudent.webp" alt="Cool Student">
+         <h3>Cool Student</h3>
+         <p>Description:<br>
+            This sleek, sage green JanSport Cool Student backpack features a durable design, multiple compartments for organized storage, and a suede leather bottom for added style and durability. Perfect for school, travel, or everyday use!</p>
+            <span>$115 BZD</span>
+         <button onclick="addToCart('Cool Student', 115)">Add to Cart</button>
+     </div>
+        <div class="product" data-name="Venture Pack System">
+            <img src="VENTURE PACK SYSTEM.webp" alt="Venture Pack System">
+            <h3>Venture Pack System</h3>
+            <p>Description:<br>  
+                The Venture Pack System by JanSport is a versatile and durable backpack designed for outdoor adventures and everyday use. It features a spacious main compartment, multiple organizational pockets, and comfortable padded shoulder straps. Built with high-quality materials, it’s perfect for hiking, travel, or school, offering both functionality and style.</p>
+            <span>$300 BZD</span>
+            <button onclick="addToCart('Venture Pack System', 300)">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Driver 8 BackPack">
+            <img src="Driver 8 BackPack.webp" alt="Driver 8 BackPack">
+            <h3>Driver 8 BackPack</h3>
+            <p>Description:<br>
+                The Driver 8 Wheeled Backpack by JanSport combines the convenience of a rolling bag with the versatility of a backpack. It features a sturdy telescoping handle, smooth-rolling wheels, and a spacious main compartment for all your essentials. When not rolling, it can be carried as a traditional backpack with padded shoulder straps. Perfect for travel, school, or commuting, it offers durability and functionality in one stylish design.</p>
+            <span>$350 BZD</span>
+            <button onclick="addToCart('Driver 8 BackPack', 350)">Add to Cart</button>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Bag Nest. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
